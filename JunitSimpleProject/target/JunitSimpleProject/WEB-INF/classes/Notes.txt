@@ -1,0 +1,56 @@
+All the following Annotation are used for methods and the annotated methods will be executing Automatically 
+by Junit as shown below
+
+ 
+@Test       --->if an operation/function/method/api having @Test           tag then it will execute 
+                only once.
+
+
+@Before     --->if an operation/function/method/api having @Before         tag then it will execute 
+                before every "@Test annotated" method.
+                
+                
+@BeforeClass--->if an operation/function/method/api having @BeforeClass    tag then it will execute 
+                before every "Testing class" loaded into memory.
+                
+NOTE:
+-----
+@BeforeClass method must be "static"
+                
+                
+@After      --->if an operation/function/method/api having @After          tag then it will execute 
+                After every "@Test annotated" method.
+
+
+@AfterClass --->if an operation/function/method/api having @AfterClass     tag then it will execute 
+                after every "Testing class" unloaded from memory.
+
+NOTE:
+-----
+@AfterClass method must be "static"
+                                                   
+                
+Execution:
+----------
+1. First, build the Junit related repository:
+---------------------------------------------
+R.C on project ---> Select "Run As"  ---> Select  "Maven Test"
+
+NOTE:   
+-----
+A] Now, it will download all the Junit related jar files.
+B] This above step1 must be done only once because if we download jar once then jars will be available at our local repository.
+
+
+2. For Testing all the Test cases Classes present in the project use following:
+-------------------------------------------------------------------------------
+ R.C on project ---> Select "Run As"  ---> Select  "JUnit Test"
+
+
+3. For Testing particular the Test cases Class present in the project use following:
+------------------------------------------------------------------------------------
+ R.C on Test case(s)class ---> Select "Run As"  ---> Select  "JUnit Test"
+
+
+
+           

@@ -1,0 +1,8 @@
+1. Notes-Junit, Mockito
+2. Output picture.
+
+
+check Later:
+------------
+given().willReturn(---);
+doReturn().whenRequest(---).....

@@ -1,0 +1,57 @@
+@RunWith:
+---------
+-> This annotation is used at CLASS LEVEL.
+-> This annotation is used to start MOCKITO ENGINE.
+-> This annotation is used to activate all MOCKITO ANNOTATIONs internally.  
+
+
+@Mock:
+------
+-> This annotation is used at GLOBAL VARIABLE LEVEL.
+-> This annotation will create dummy object for the Annotated class.
+NOTE:
+-----
+By using @Mock annotated class object, if we call any method then DUMMY method only executes but not REAL method[check using Sop statements].
+
+
+Example:
+--------
+Refer "MockAnnotationExampleTest.java"
+
+
+
+when(XX).thenReturn(YY):
+------------------------
+->This is not annotation, they are normal method calls which are used to change the logic as following
+=>if "XX" is coming the "YY" will be the output.
+
+NOTE:
+-----
+1. XX can be ===> An object with method call [where method may or may not have inputs]
+2. Whatever method inputs we pass during this process then same method inputs must be used at next method call process, Otherwise it will not work properly to us.
+
+
+Logic:
+------
+Refer "doReturn$whenLogics.png"
+
+
+Example:
+--------
+Refer "A.java" , "B.java" and "ATest.java".
+
+
+doReturn(YY).when(X).X(-):
+--------------------------
+Same logic but internal logic will differ [Doubt].
+
+Logic:
+------
+Refer "doReturn$whenLogics.png"
+
+  
+
+
+
+
+
