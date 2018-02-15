@@ -1,7 +1,17 @@
 package com.it;
 
 public class A {
- public B f1(){
+ private C c;
+ 
+ public C getC() {
+	return c;
+}
+
+public void setC(C c) {
+	this.c = c;
+}
+
+public B f1(){
 	 return new B("Anil");
  }
  
