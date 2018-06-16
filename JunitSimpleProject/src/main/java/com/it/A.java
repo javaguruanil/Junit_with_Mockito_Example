@@ -7,7 +7,6 @@ public class A {
 	return c;
 }
 
-	
 public void setC(C c) {
 	this.c = c;
 }
