@@ -18,6 +18,4 @@ public B f1(){
  public int f2(int inp1, int inp2){
 	 return 88;
  }
- 
- //Done
 }
